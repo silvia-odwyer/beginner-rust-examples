@@ -29,4 +29,18 @@ fn main() {
     for (index, value) in (5..10).enumerate(){
         println!("index is {} and value is {}", index, value);
     }
+
+    let lines = "hello\nworld".lines();
+    for (linenumber, line) in lines.enumerate(){
+        println!("{}, {}", linenumber, line);
+    }
+
+    // Break/Continue with labels
+
+    'outer: for x in 0..10{
+        'inner: for y in 0..10{
+            if x % 2 == 0{ continue 'outer;}
+            if y % 2 == 0{continue 'inner;}
+        }
+    }
 }

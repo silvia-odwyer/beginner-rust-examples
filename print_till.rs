@@ -10,7 +10,7 @@ fn main(){
     .expect("Could not read line! :/");
 
     let end : u32 = end.trim().parse(){
-        Ok(num) => num, 
+        Ok(num) => end, 
         Err(_) => continue,
     };
 

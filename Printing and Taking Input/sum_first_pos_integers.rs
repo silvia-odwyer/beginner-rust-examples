@@ -1,18 +1,22 @@
-use stdin::io;
+use std::io;
 
 fn main() {
-    let n = String::new();
 
-    io::stdin().read_line(&mut n)
-    .expect("Could not read line :(");
+    loop {
+        println!("This program finds the sum to the first n positive integers.");
+        println!("Enter a number (n):");
+        let mut n = String::new();
 
-    let n : u32 = n.trim().parse(){
-        Ok(num) => n, 
-        Err(_) => println!("Please enter a number!")
-    }
+        io::stdin().read_line(&mut n)
+        .expect("Could not read line :(");
 
-    let sum = (n * (n + 1)) / 2;
+        let n : u32 = match n.trim().parse(){
+            Ok(n) => n, 
+            Err(_) => continue,
+        };
 
-    println!("Sum is: {}", sum);
+        let sum = (n * (n + 1)) / 2;
 
+        println!("Sum is: {}", sum);
+    }  
 }

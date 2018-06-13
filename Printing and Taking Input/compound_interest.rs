@@ -1,24 +1,27 @@
 use std::io;
 
 fn main() {
-    println!("Enter amount deposited into account initially :");
+    loop {
+        println!("Enter amount deposited into account initially :");
 
-    let amount = String::new();
+        let mut amount = String::new();
 
-    io::stdin().read_line(&mut amount)
-    .expect("Could not read line :(");
+        io::stdin().read_line(&mut amount)
+        .expect("Could not read line :(");
 
-    let amount = amount.trim().parse(){
-        Ok(num) => amount,
-        Err(_) => println!("You did not enter a number!")
+        let amount: f64 = match amount.trim().parse(){
+            Ok(amount) => amount,
+            Err(_) => continue,
+        };
+
+        let interest = 0.04;
+        let mut amount_with_interest = amount;
+        println!("{}", amount_with_interest);
+        for _x in 0..3 {
+            amount_with_interest = amount_with_interest + (amount_with_interest * interest);
+            println!("{}", amount_with_interest);
+        };
+
+        println!("Amount after 3 years: {}", amount_with_interest);
     }
-
-    let interest = 0.04;
-    let amount_with_interest = amount;
-    for x in 0..3 {
-        amount_with_interest = amount_with_interest * 0.04
-    }
-
-    println!("Amount after 3 years: {}", amount_with_interest)
-
 }

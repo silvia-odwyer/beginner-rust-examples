@@ -1,27 +1,33 @@
-use std::io
+use std::io;
 
 fn main() {
-    println!("Please enter the width of the room: ");
+    loop {
+        println!("Enter the width of the room: ");
 
-    let width = String::new();
-    io::stdin().read_line(&mut width)
-    .expect("Could not read line :(");
+        let mut width = String::new();
 
-    let width: i32 = width.trim().parse(){
-        Ok(num) => width,
-        Err(_) => println!("Enter a number!")
+        io::stdin().read_line(&mut width)
+        .expect("Could not read line :(");
+
+        let width: u32 = match width.trim().parse(){
+            Ok(width) => width,
+            Err(_) => continue,
+        };
+
+        println!("Enter the length of the room: ");
+        let mut length = String::new();
+
+        io::stdin().read_line(&mut length)
+        .expect("Could not read line :(");
+
+        let length: u32 = match length.trim().parse(){
+            Ok(length) => length,
+            Err(_) => continue,
+        };
+
+        let area = length * width;
+        println!("The area is {}", area);
+
     }
-
-    let length = String::new();
-
-    io::stdin().read_line(&mut length)
-    .expect("Could not read line :(");
-
-    let length = length.trim().parse(){
-        Ok(num) => length,
-        Err(_) => println!("Enter a number!")
-    }
-
-    let area = length * width;
-    println!("The area is {}", area)
+    
 }

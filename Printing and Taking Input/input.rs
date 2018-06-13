@@ -1,11 +1,12 @@
-use std::io
+use std::io;
 
 fn main(){
-    let name = String::new()
+    println!("What is your name?");
+    let mut name = String::new();
 
-    io::stdin().read_line().(&mut name)
+    io::stdin().read_line(&mut name)
     .expect("Could not read line!");
 
-    println!("Hello, {}", name)
+    println!("Hello, {}", name);
 
 }

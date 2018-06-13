@@ -1,15 +1,17 @@
-use stdin::io;
+use std::io;
 
 fn main() {
-    let n = String::new();
-    
-    io::stdin().read_line()
+
+    loop {
+    let mut n = String::new();
+    println!("Enter a number: ");
+    io::stdin().read_line(&mut n)
     .expect("Could not read line :(");
 
-    let n : u32 = n.trim().parse(){
-        Ok(num) => n,
-        Err(_) => println!("You did not enter a number!")
-    }
+    let n : i32 = match n.trim().parse(){
+        Ok(n) => n,
+        Err(_) => continue,
+    };
 
     let res = n % 2;
 
@@ -19,5 +21,8 @@ fn main() {
     else{
         println!("The number is odd.")
     }
+
+    }
+    
 
 }

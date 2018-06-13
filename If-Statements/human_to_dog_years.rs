@@ -1,22 +1,31 @@
-use stdin::io;
+use std::io;
 
 fn main() {
-    let human_years = String::new();
+
+    loop {
+    println!("Enter human years: ");
+    let mut human_years = String::new();
 
     io::stdin().read_line(&mut human_years)
     .expect("Could not read line :(");
 
-    let human_years : i32 = human_years.trim().parse(){
-        Ok(num) => human_years,
-        Err(_) => println!("Please enter a number!")
-    }
+    let human_years : i32 = match human_years.trim().parse(){
+        Ok(human_years) => human_years,
+        Err(_) => continue,
+    };
 
-    let dog_years = 0;
-    if human_years < 3 && human_years > 0 {
-        dog_years = human_years * 10.5
+    if human_years < 3 {
+        let dog_years = human_years * 10;
+            println!("Dog years: {}", dog_years)
     }
     else {
-        dog_years = 20.5 + ((human_years - 2) * 4)
+        let dog_years = 20 + ((human_years - 2) * 4);
+            println!("Dog years: {}", dog_years)
     }
+
+
+
+    }
+  
 
 }

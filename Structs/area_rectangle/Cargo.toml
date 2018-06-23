@@ -1,0 +1,6 @@
+[package]
+name = "area_rectangle"
+version = "0.1.0"
+authors = ["silvia-odwyer <silviaodwyer119@yahoo.ie>"]
+
+[dependencies]

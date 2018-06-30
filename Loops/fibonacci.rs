@@ -11,15 +11,24 @@ fn main () {
     Err(_) => break,
     };
 
+    let mut fib_vec = vec![];
 
-    let mut sum = 0;
+    let mut x = 1;
+    let mut prev_num = 2;
+    let mut i = 0;
 
-    for x in 1..n {
-        sum = sum + x;
-        if x == n - 1{
-            println!("Sum: {}", sum + x + 1)
+    loop {
+        current_num = current_num + prev_num;
+        fib_vec.push(x);
+        prev_num = x;
+
+        if i == n{
+            println!("{:?}", fib_vec);
         }
-    };
+    }
+
+
+    }
     }
 
 }

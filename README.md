@@ -1,12 +1,23 @@
 # Rust Examples
+
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) 
+
+[![Powered by Rust](https://img.shields.io/badge/powered%20by-rust-red.svg)]
+
 I've been learning the basic syntax of Rust lately, and to help solidify my learning,
 I coded basic programs, and have categorised them accordingly.
+
+I plan to keep adding to this as I keep coding and learning new concepts, so make sure to keep an eye on it. 
 
 If you ever intend to learn Rust, you might find the code useful if you're starting off initially
 and just want to look at sample code to do certain things. 
 
-The great thing about Rust is that its overall design forces you to write clean code, and to make your program as fast as possible,
-so hopefully my code is as clean as I can make it. Obviously, there are much faster ways of doing certain
-things, but until I get to that point, I've got these basic programming constructs to work with for now.
+## How To Run The Programs
+Rust automatically creates executables with every compilation of the programs, but if you're not running Windows, 
+you'll need to compile the code from source. After downloading Rust, go to the directory with the program you want to compile
+and type `rustc name-of-program.rs`. Of course, if the program requires external crates, then you'll need to use 
+cargo to get those, so type `cargo run --release` instead (the release tag makes sure the program runs at its fastest).
 
-I'm just using this repo to document my progress really. Feel free to add your own if you like!
+## Pull Requests Welcome!
+Of course, feel free to add your own programs too, if you like! Just submit a pull request, and I'll add it in. :D
+Make sure they're beginner-friendly and not laboriously complex, for now, since this repo is dedicated to beginner programs.

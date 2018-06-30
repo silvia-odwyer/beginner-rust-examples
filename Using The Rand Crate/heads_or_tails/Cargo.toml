@@ -1,0 +1,8 @@
+[package]
+name = "rust_heads_or_tails"
+version = "0.1.0"
+authors = ["silvia-odwyer <silviaodwyer19@gmail.com>"]
+
+[dependencies]
+time = "*"
+rand = "0.5.3"

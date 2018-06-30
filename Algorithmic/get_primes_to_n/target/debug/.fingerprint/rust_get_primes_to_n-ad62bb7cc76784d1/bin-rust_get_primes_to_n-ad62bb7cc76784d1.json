@@ -1,0 +1,1 @@
+{"rustc":16627290495782064589,"features":"[]","target":10856551318458862285,"profile":298838921604450868,"path":1036222786711178230,"deps":[["time v0.1.40",4846934460263975241]],"local":[{"MtimeBased":[[1530044840,371169800],".fingerprint\\rust_get_primes_to_n-ad62bb7cc76784d1\\dep-bin-rust_get_primes_to_n-ad62bb7cc76784d1"]}],"rustflags":[],"epoch":"Epoch2015"}

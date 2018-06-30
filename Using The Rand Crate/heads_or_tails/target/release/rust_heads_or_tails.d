@@ -1,0 +1,1 @@
+C:\Users\silvi\Desktop\rust-benchmarking\heads_or_tails\rust_heads_or_tails\target\release\rust_heads_or_tails.pdb: C:\Users\silvi\Desktop\rust-benchmarking\heads_or_tails\rust_heads_or_tails\src\main.rs

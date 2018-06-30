@@ -3,6 +3,9 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) 
 ![Powered by Rust](https://img.shields.io/badge/powered%20by-rust-red.svg)
 
+This repository collects beginner Rust programs, which showcase certain concepts that beginners might be unfamiliar with when 
+learning Rust initially.
+
 I've been learning the basic syntax of Rust lately, and to help solidify my learning,
 I coded basic programs, and have categorised them accordingly.
 

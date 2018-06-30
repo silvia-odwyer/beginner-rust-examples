@@ -5,5 +5,9 @@ fn main() {
         println!("the value is: {}", element);
     }
 
+    // You can also reverse your iter, should you need it:
+    for number in (1..10).rev() {
+        println!("{}!", number);
+    }
     
 }

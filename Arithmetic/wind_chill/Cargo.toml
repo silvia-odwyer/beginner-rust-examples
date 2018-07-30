@@ -1,6 +1,0 @@
-[package]
-name = "wind_chill"
-version = "0.1.0"
-authors = ["michealodwyer26 <michealodwyer26@gmail.com>"]
-
-[dependencies]

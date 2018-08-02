@@ -6,6 +6,12 @@
 This repository collects beginner Rust programs, which showcase certain concepts that beginners might be unfamiliar with when 
 learning Rust initially.
 
+## Contributors 
+- Silvia O'Dwyer
+- Michéal O'Dwyer 
+- + whoever decides to join in and add more examples in the future! :D
+
+## Background
 I've been learning the basic syntax of Rust lately, and to help solidify my learning,
 I coded basic programs, and have categorised them accordingly.
 

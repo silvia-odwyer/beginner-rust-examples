@@ -1,6 +1,0 @@
-[package]
-name = "making_change"
-version = "0.1.0"
-authors = ["michealodwyer26 <michealodwyer26@gmail.com>"]
-
-[dependencies]

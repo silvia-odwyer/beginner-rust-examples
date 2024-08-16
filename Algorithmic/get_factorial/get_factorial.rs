@@ -15,11 +15,10 @@ fn main() {
         };
         let mut factorial = 1;
 
-        for i in 2..n + 1 {
-            factorial = factorial * i;
-            if i == n {
-                println!("Factorial: {}", factorial);
-            }
+        for i in 2..=n {
+            factorial *= i;
         }
+
+        println!("Factorial: {}", factorial);
     }
 }
